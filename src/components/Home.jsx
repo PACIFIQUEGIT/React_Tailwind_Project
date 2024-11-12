@@ -1,13 +1,13 @@
 import React from 'react';
 import { FaLongArrowAltRight } from "react-icons/fa";
-import { FaHouse } from "react-icons/fa6";
-import { SiDatabricks } from "react-icons/si";
-import { FaRegSmile } from "react-icons/fa";
 import { MdOutlineWaterDrop } from "react-icons/md";
 import { PiTreeEvergreen } from "react-icons/pi";
 import { BsHouse } from "react-icons/bs";
 import { GoLightBulb } from "react-icons/go";
 import { GoDot } from "react-icons/go";
+import { MdOutlineEmergencyShare } from "react-icons/md";
+import { MdOutlineVolunteerActivism } from "react-icons/md";
+import { BsSendCheck } from "react-icons/bs";
 
 export const Home = () => {
   return (
@@ -94,25 +94,29 @@ export const Home = () => {
       </div>
       </div>
       <div className="right">
-        <h1 className='font-bold text-[40px]'>How we work</h1>
+        <h1 className='font-bold text-[40px]'>How To Help Us</h1>
         <h1 className='bg-green-500 w-7 h-1'></h1>
         <div className='flex my-5'>
-          <div className="icon text-white bg-green-500 rounded-full p-3"><FaHouse /></div>
-          <div className="h1 font-bold text-lg pl-2 pt-2">Community centers</div>
+          <div className="icon text-white bg-green-500 rounded-full p-3"><BsSendCheck /></div>
+          <div className="h1 font-bold text-lg pl-2 pt-2">Send donations</div>
             </div>
         <p>Charity law within Africa varies among <u>Countries</u> but the fundamental principles are the same.</p>
         <div className='flex my-5'>
-          <div className="icon text-white bg-green-500 rounded-full p-3"><SiDatabricks /></div>
-          <div className="h1 font-bold text-lg pl-2 pt-2">Data-driven approach</div>
+          <div className="icon text-white bg-green-500 rounded-full p-3"><MdOutlineEmergencyShare /></div>
+          <div className="h1 font-bold text-lg pl-2 pt-2">Share Media</div>
           </div>
         <p>Charity law within Africa varies among <u>Countries</u> but the fundamental principles are the same.</p>
         <div className='flex my-5'>
-          <div className="icon text-white bg-green-500 rounded-full p-3"><FaRegSmile /></div>
-          <div className="h1 font-bold text-lg pl-2 pt-2">Focused support</div>
+          <div className="icon text-white bg-green-500 rounded-full p-3"><MdOutlineVolunteerActivism /></div>
+          <div className="h1 font-bold text-lg pl-2 pt-2">Become volunteer</div>
         </div>
         <p>Charity law within Africa varies among <u>Countries</u> but the fundamental principles are the same.</p>
+        <button className='bg-green-500 text-[12px] text-white font-bold py-4 px-10 m-4'>DONATE</button>
             </div>
           </div>
+    <div>
+
+    </div>
     <div className="flex justify-around my-7">
       <div className="p-5 relative">
         <div className=" bg-green-100 rounded-full p-10"></div>

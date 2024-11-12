@@ -6,6 +6,8 @@ import {About} from './components/About';
 import {Contact} from './components/Contact';
 import {Donate} from './components/Donate';
 import { Footer } from './components/Footer';
+import { Payment } from './components/payment';
+import { Card } from './components/Card';
 
 function App() {
   return (
@@ -16,6 +18,9 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/donate" element={<Donate />} />
+        <Route path="/payment" element={<Payment />} >
+          <Route path='card' element={<Card />} />
+        </Route>
       </Routes>
       <Footer/>
     </Router>

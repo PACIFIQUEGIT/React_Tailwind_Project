@@ -12,10 +12,10 @@ export const Navbar = () => {
 
         {/* Links */}
         <div className="flex space-x-6">
-          <Link to="/" className="hover:text-yellow-500 transition-colors">Home</Link>
-          <Link to="/about" className="hover:text-yellow-500 transition-colors">About</Link>
-          <Link to="/contact" className="hover:text-yellow-500 transition-colors">Contact</Link>
-          <Link to="/donate" className="hover:text-yellow-500 transition-colors">Donate</Link>
+          <Link to="/" className="hover:text-yellow-500 transition-colors py-3">Home</Link>
+          <Link to="/about" className="hover:text-yellow-500 transition-colors py-3">About</Link>
+          <Link to="/contact" className="hover:text-yellow-500 transition-colors py-3">Contact</Link>
+          <Link to="/donate" className="hover:text-yellow-500 transition-colors bg-green-500 text-white px-5 py-3 rounded-lg">Donate</Link>
         </div>
       </div>
     </div>
