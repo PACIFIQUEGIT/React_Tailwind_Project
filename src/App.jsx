@@ -8,6 +8,7 @@ import {Donate} from './components/Donate';
 import { Footer } from './components/Footer';
 import { Payment } from './components/Payment';
 import { Card } from './components/Card';
+import { Volunteer } from './components/volunteer';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/payment" element={<Payment />} >
           <Route path='card' element={<Card />} />
         </Route>
+        <Route path="/volunteer" element={<Volunteer />} />
       </Routes>
       <Footer/>
     </Router>

@@ -8,8 +8,17 @@ import { GoDot } from "react-icons/go";
 import { MdOutlineEmergencyShare } from "react-icons/md";
 import { MdOutlineVolunteerActivism } from "react-icons/md";
 import { BsSendCheck } from "react-icons/bs";
+import { useNavigate } from 'react-router-dom';
 
 export const Home = () => {
+
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    navigate('/donate');
+  }
+
   return (
     <>
 
@@ -111,7 +120,7 @@ export const Home = () => {
           <div className="h1 font-bold text-lg pl-2 pt-2">Become volunteer</div>
         </div>
         <p>Charity law within Africa varies among <u>Countries</u> but the fundamental principles are the same.</p>
-        <button className='bg-green-500 text-[12px] text-white font-bold py-4 px-10 m-4'>DONATE</button>
+        <button onClick={handleSubmit} className='bg-green-500 text-[12px] text-white font-bold py-4 px-10 m-4'>DONATE</button>
             </div>
           </div>
     <div>
