@@ -6,7 +6,7 @@ import {About} from './components/About';
 import {Contact} from './components/Contact';
 import {Donate} from './components/Donate';
 import { Footer } from './components/Footer';
-import { Payment } from './components/payment';
+import { Payment } from './components/Payment';
 import { Card } from './components/Card';
 
 function App() {
