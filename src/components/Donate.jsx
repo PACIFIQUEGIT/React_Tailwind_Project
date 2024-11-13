@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom'; 
+import { Link } from 'react-router-dom';
 
 export const Donate = () => {
   const navigate = useNavigate();
@@ -27,22 +28,22 @@ export const Donate = () => {
   return (
     <>
       <div className="flex justify-center p-5">
-        <div className="flex justify-end mb-3">
+        <div className="flex flex-wrap justify-center mb-3 space-x-3">
           {/* Donation amount buttons */}
           <button
-            className="mr-5 bg-gray-300 px-4 py-2 rounded"
+            className="bg-gray-300 px-4 py-2 rounded mb-2"
             onClick={() => handleAmountClick(50)}
           >
             $50
           </button>
           <button
-            className="mr-5 bg-gray-300 px-4 py-2 rounded"
+            className="bg-gray-300 px-4 py-2 rounded mb-2"
             onClick={() => handleAmountClick(100)}
           >
             $100
           </button>
           <button
-            className="mr-5 bg-gray-300 px-4 py-2 rounded"
+            className="bg-gray-300 px-4 py-2 rounded mb-2"
             onClick={() => handleAmountClick(500)}
           >
             $500
@@ -50,16 +51,17 @@ export const Donate = () => {
         </div>
       </div>
 
-      <div className="flex justify-between p-5">
-        <div className="px-5 w-[60%]">
-          <h1 className="font-bold text-[20px] mb-2">
+      <div className="flex flex-col md:flex-row p-5 space-y-5 md:space-y-0 md:space-x-10">
+        {/* Left Side (Form) */}
+        <div className="w-full md:w-[60%] p-5 bg-white rounded-lg shadow-lg">
+          <h1 className="font-bold text-[20px] mb-4">
             Your contributions help us sustain our mission and reach more people in need.
           </h1>
 
           <form className="w-full" onSubmit={handleSubmit}>
             <div className="mb-3">
               <input
-                className="text-black border border-black w-full h-12 px-3"
+                className="text-black border border-black w-full h-12 px-3 rounded"
                 placeholder="First Name"
                 type="text"
                 value={firstName}
@@ -69,7 +71,7 @@ export const Donate = () => {
             </div>
             <div className="mb-3">
               <input
-                className="text-black border border-black w-full h-12 px-3"
+                className="text-black border border-black w-full h-12 px-3 rounded"
                 placeholder="Last Name"
                 type="text"
                 value={lastName}
@@ -79,7 +81,7 @@ export const Donate = () => {
             </div>
             <div className="mb-3">
               <input
-                className="text-black border border-black w-full h-12 px-3"
+                className="text-black border border-black w-full h-12 px-3 rounded"
                 placeholder="Email"
                 type="email"
                 value={email}
@@ -89,7 +91,7 @@ export const Donate = () => {
             </div>
             <div className="mb-3">
               <input
-                className="text-black border border-black w-full h-12 px-3"
+                className="text-black border border-black w-full h-12 px-3 rounded"
                 placeholder="Country"
                 type="text"
                 value={country}
@@ -99,14 +101,12 @@ export const Donate = () => {
             </div>
             <div className="mb-3">
               <select
-                className="text-black border border-black h-12 px-3"
+                className="text-black border border-black h-12 px-3 w-full rounded"
                 value={city}
                 onChange={(e) => setCity(e.target.value)}
                 required
               >
-                <option value="" disabled>
-                  Select City
-                </option>
+                <option value="" disabled>Select City</option>
                 <option value="Kigali">Kigali</option>
                 <option value="Nairobi">Nairobi</option>
                 <option value="Dar Es Salaam">Dar Es Salaam</option>
@@ -116,9 +116,8 @@ export const Donate = () => {
             </div>
 
             <div className="mb-3">
-              {/* The amount input should allow updates manually */}
               <input
-                className="text-black border border-black w-full h-12 px-3"
+                className="text-black border border-black w-full h-12 px-3 rounded"
                 type="number"
                 value={amount}
                 onChange={(e) => setAmount(e.target.value)}
@@ -127,15 +126,16 @@ export const Donate = () => {
             </div>
 
             <div>
-              <button type="submit" className="bg-green-500 text-white px-5 py-3">
+              <button type="submit" className="bg-green-500 text-white px-5 py-3 rounded w-full">
                 <b>DONATE NOW</b>
               </button>
             </div>
           </form>
         </div>
 
-        <div>
-          <h1 className="text-[35px] mb-5">Why Donate?</h1>
+        {/* Right Side (Why Donate?) */}
+        <div className="w-full md:w-[40%] text-white p-5 bg-green-500 rounded-lg shadow-lg">
+          <h1 className="text-[35px] font-bold mb-5">Why Donate?</h1>
           <p className="mb-3">
             Your donations support our ongoing efforts to provide clean water, education, and healthcare to communities in need.
           </p>

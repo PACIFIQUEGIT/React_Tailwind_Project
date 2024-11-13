@@ -9,6 +9,9 @@ import { Footer } from './components/Footer';
 import { Payment } from './components/Payment';
 import { Card } from './components/Card';
 import { Volunteer } from './components/Volunteer';
+import { Newsletter } from './components/Newsletter';
+import { Pdf } from './components/Pdf';
+
 
 function App() {
   return (
@@ -17,6 +20,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/newsletter" element={<Newsletter />} />
+        <Route path="/pdf" element={<Pdf />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/donate" element={<Donate />} />
         {/* Corrected the path for the Card route */}

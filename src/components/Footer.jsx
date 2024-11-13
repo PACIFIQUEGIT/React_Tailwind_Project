@@ -5,7 +5,7 @@ export const Footer = () => {
     <div className="bg-gray-900 text-white py-8">
       <div className="max-w-6xl mx-auto px-4">
         {/* Footer Top Section */}
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Footer Column 1: Navigation Links */}
           <div>
             <h3 className="text-xl font-bold mb-4">Quick Links</h3>
@@ -20,7 +20,7 @@ export const Footer = () => {
           {/* Footer Column 2: Social Media Links */}
           <div>
             <h3 className="text-xl font-bold mb-4">Follow Us</h3>
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 mb-4">
               <a href="https://facebook.com" className="hover:text-yellow-500 transition-colors" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-facebook-square text-2xl"></i> {/* Facebook Icon */}
               </a>
@@ -40,13 +40,13 @@ export const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Subscribe</h3>
             <p className="mb-4">Subscribe to our newsletter to receive the latest updates and news.</p>
-            <form className="flex space-x-4">
+            <form className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
               <input 
                 type="email" 
                 placeholder="Enter your email" 
-                className="p-2 rounded-l-md border border-gray-600 bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-500"
+                className="p-2 rounded-l-md border border-gray-600 bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 w-full md:w-2/3"
               />
-              <button type="submit" className="px-4 py-2 bg-yellow-500 text-gray-900 rounded-r-md hover:bg-yellow-400 transition-colors">
+              <button type="submit" className="px-4 py-2 bg-yellow-500 text-gray-900 rounded-r-md hover:bg-yellow-400 transition-colors w-full md:w-auto">
                 Subscribe
               </button>
             </form>
@@ -54,7 +54,7 @@ export const Footer = () => {
         </div>
 
         {/* Footer Bottom Section (Copyright) */}
-        <div className="mt-8 border-t border-gray-700 pt-4 text-center">
+        <div className="mt-8 border-t border-gray-700 pt-4 text-center text-sm">
           <p>&copy; 2024 YourCompany. All rights reserved.</p>
         </div>
       </div>
