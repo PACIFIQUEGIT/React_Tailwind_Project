@@ -25,33 +25,49 @@ export const Newsletter = () => {
       <div className="right p-5">
           <h1 className="font-bold text-[20px]">Newsletter</h1>
           <h1 className="bg-green-500 w-7 h-1"></h1>
-          <h1 className="font-bold mt-5 pb-2 text-[20px]">Old Newsletter</h1>
+          <h1 className="font-bold mt-5 pb-2 text-[20px]">Current Newsletter</h1>
           <div className='w-full flex justify-center px-7'>
-            <div className='flex w-full justify-between sm:flex-row'>
-              <Link to='/pdf' className='h-32 w-1/2 border mr-3 hover:shadow-lg transition-all'>
-                People who have been suffering with hunger <br /> <br /> 10 September, 2023
+            <div className='flex w-full sm:flex-row'>
+              <div>
+              <Link to='/pdf'>
+              <div className='h-32 w-96 bg-yellow-500 flex justify-center border mr-3 hover:shadow-lg transition-all'>
+                <p className='self-center'>Current Newsletter</p>
+              </div>
               </Link>
-              <Link to='/pdf' className='h-32 w-1/2 border mr-3 hover:shadow-lg transition-all'>
-                People who have gotten help <br /> <br /> 2nd November, 2023
+              <p><u>People who have been suffering with hunger <br /> 10 September, 2023</u></p>
+              </div>
+              <div>
+              <Link to='/pdf'>
+              <div className='h-32 w-96 bg-yellow-500 flex justify-center border mr-3 hover:shadow-lg transition-all'>
+                <p className='self-center'>Current Newsletter</p>
+              </div>
               </Link>
-              <Link to='/pdf' className='h-32 w-1/2 border mr-3 hover:shadow-lg transition-all'>
-                #
-              </Link>
+              <p><u>People who have gotten help <br /> 2nd November, 2023</u></p>
+              </div>
             </div>
           </div>
 
-          <h1 className="font-bold mt-12 pb-2 text-[20px]">Recent Newsletter</h1>
-          <div className='w-full flex justify-center mb-5 px-7'>
-            <div className='flex w-full justify-between'>
-              <Link to='pdf' className='h-32 w-1/3 border mr-3 hover:shadow-lg transition-all'>
-                People who have been suffering with hunger <br /> <br /> 10 September, 2023
+          <hr className='bg-yellow-500 h-1 mt-8' />
+
+          <h1 className="font-bold mt-8 pb-2 text-[20px]">Old Newsletter</h1>
+          <div className='w-full flex justify-center px-7'>
+            <div className='flex w-full sm:flex-row'>
+              <div>
+              <Link to='/pdf'>
+              <div className='h-32 w-96 bg-gray-200 flex justify-center border mr-3 hover:shadow-lg transition-all'>
+                <p className='self-center'>Old Newsletter</p>
+              </div>
               </Link>
-              <Link to='pdf' className='h-32 w-1/3 border mr-3 hover:shadow-lg transition-all'>
-                People who have gotten help <br /> <br /> 2nd November, 2023
+              <p><u>People who have been suffering with hunger <br /> 10 September, 2023</u></p>
+              </div>
+              <div>
+              <Link to='/pdf'>
+              <div className='h-32 w-96 bg-gray-200 flex justify-center border mr-3 hover:shadow-lg transition-all'>
+                <p className='self-center'>Old Newsletter</p>
+              </div>
               </Link>
-              <Link to='pdf' className='h-32 w-1/3 border mr-3 hover:shadow-lg transition-all'>
-                #
-              </Link>
+              <p><u>People who have gotten help <br /> 2nd November, 2023</u></p>
+              </div>
             </div>
           </div>
 

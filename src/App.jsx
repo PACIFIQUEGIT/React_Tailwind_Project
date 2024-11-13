@@ -11,12 +11,14 @@ import { Card } from './components/Card';
 import { Volunteer } from './components/Volunteer';
 import { Newsletter } from './components/Newsletter';
 import { Pdf } from './components/Pdf';
+import  ScrollToTop  from './components/ScrollToTop';
 
 
 function App() {
   return (
     <Router>
       <Navbar />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
