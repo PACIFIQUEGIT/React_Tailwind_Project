@@ -40,7 +40,7 @@ export const Newsletter = () => {
               <p><u>People who have been suffering with hunger <br /> 10 September, 2023</u></p>
             </div>
             <div className="mb-4 sm:mb-0">
-              <Link to='/pdf'>
+              <Link to='/pdf1'>
                 <div className='h-32 w-full sm:w-96 bg-yellow-500 flex justify-center border mr-3 hover:shadow-lg transition-all'>
                   <p className='self-center'>Current Newsletter</p>
                 </div>
@@ -57,7 +57,7 @@ export const Newsletter = () => {
         <div className='w-full flex justify-center px-7'>
           <div className='w-full sm:flex-row flex-col sm:flex'>
             <div className="mb-4 sm:mb-0">
-              <Link to='/pdf'>
+              <Link to='#'>
                 <div className='h-32 w-full sm:w-96 bg-gray-200 flex justify-center border mr-3 hover:shadow-lg transition-all'>
                   <p className='self-center'>Old Newsletter</p>
                 </div>
@@ -65,7 +65,7 @@ export const Newsletter = () => {
               <p><u>People who have been suffering with hunger <br /> 10 September, 2023</u></p>
             </div>
             <div className="mb-4 sm:mb-0">
-              <Link to='/pdf'>
+              <Link to='#'>
                 <div className='h-32 w-full sm:w-96 bg-gray-200 flex justify-center border mr-3 hover:shadow-lg transition-all'>
                   <p className='self-center'>Old Newsletter</p>
                 </div>

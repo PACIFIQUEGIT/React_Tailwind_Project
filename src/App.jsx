@@ -11,6 +11,7 @@ import { Card } from './components/Card';
 import { Volunteer } from './components/Volunteer';
 import { Newsletter } from './components/Newsletter';
 import { Pdf } from './components/Pdf';
+import { Pdf1 } from './components/Pdf1';
 import  ScrollToTop  from './components/ScrollToTop';
 
 
@@ -24,6 +25,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/newsletter" element={<Newsletter />} />
         <Route path="/pdf" element={<Pdf />} />
+        <Route path="/pdf1" element={<Pdf1 />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/donate" element={<Donate />} />
         {/* Corrected the path for the Card route */}
