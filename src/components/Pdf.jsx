@@ -20,7 +20,7 @@ export const Pdf = () => {
     
   <div className="pdf-viewer-container">
         <embed 
-          src="public/hunger.pdf" 
+          src="/public/hunger.pdf" 
           width="100%" 
           height="800px" 
           type="application/pdf" 
