@@ -144,7 +144,7 @@ export const Home = () => {
     <div>
 
       <div className='relative'>
-        <div className='absolute border border-yellow-500 flex left-12 right-12 justify-center top-12 bottom-12'>
+        <div className='absolute border border-yellow-500 flex lg:left-12 lg:right-12 justify-center lg:top-12 lg:bottom-12'>
           <div className='flex flex-col z-10 self-center border border-white p-5'><p className="text-white self-center">
             Charity law within Africa varies among <br />
             <u>Countries</u> but the fundamental principles are the same. <br />
