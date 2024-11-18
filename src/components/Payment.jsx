@@ -1,38 +1,53 @@
-// Payment.jsx
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, Outlet } from 'react-router-dom';
-import { FaCcVisa } from "react-icons/fa";
-import { FaCcMastercard } from "react-icons/fa";
-import { FaCcPaypal } from "react-icons/fa";
+import { FaCcVisa, FaCcMastercard, FaCcPaypal } from "react-icons/fa";
 
 export const Payment = () => {
+  // State to handle dropdown visibility
+  const [isOpen, setIsOpen] = useState(false);
+
+  // Toggle dropdown visibility
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <>
       <div className="bg-gray-900 text-white p-4 shadow-md">
         <div className="flex items-center justify-between max-w-6xl mx-auto">
-          {/* Logo */}
           <div className="text-2xl font-bold">
             <span className="text-yellow-500">Charity</span>
           </div>
-
-          {/* Links */}
-          <div className="hidden md:flex space-x-6">
-            <Link to="/" className="hover:text-yellow-500 transition-colors py-3">Home</Link>
-            <Link to="/about" className="hover:text-yellow-500 transition-colors py-3">About</Link>
-            <Link to="/contact" className="hover:text-yellow-500 transition-colors py-3">Contact</Link>
-            <Link to="/donate" className="hover:text-yellow-500 transition-colors bg-green-500 text-white px-5 py-3 rounded-lg">Donate</Link>
+          <div className="flex space-x-6">
+            <Link className="hover:text-yellow-500 transition-colors py-3">Home</Link>
+            <Link className="hover:text-yellow-500 transition-colors py-3">About</Link>
+            <Link className="hover:text-yellow-500 transition-colors py-3">Contact</Link>
+            <Link className="hover:text-yellow-500 transition-colors bg-green-500 text-white px-5 py-3 rounded-lg">Donate</Link>
           </div>
         </div>
       </div>
 
       <div className="flex justify-center p-6">
         <div className="w-full max-w-3xl text-center">
-          <h1 className="font-bold text-lg mb-4">Select Payment Method:</h1>
+          {/* Custom Dropdown for Payment Method */}
+          <div className="space-y-3 mb-5">
+            <div className="relative">
+              <button 
+                onClick={toggleDropdown} 
+                className="bg-blue-500 text-white py-2 px-4 rounded-lg text-left focus:outline-none">
+                Choose Payment Method
+              </button>
 
-          {/* Payment Links */}
-          <div className="space-y-3 mb-6">
-            <Link to="card" className="text-blue-500 hover:underline">Pay with Card</Link>
-            <Link to="#" className="text-blue-500 hover:underline">Pay with PayPal</Link>
+              {/* Dropdown menu */}
+              {isOpen && (
+                <div className="absolute top-0 left-[64%] bg-white shadow-lg rounded-lg">
+                  <div className="py-2">
+                    <Link onClick={toggleDropdown}  to="card" className="block py-2 text-blue-500 hover:bg-gray-200">Pay with Card</Link>
+                    <Link onClick={toggleDropdown}  to="#" className="block py-2 text-blue-500 hover:bg-gray-200">Pay with PayPal</Link>
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
 
           {/* Payment Card Section */}
