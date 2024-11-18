@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom'; 
 import { Link } from 'react-router-dom';
 
 export const Donate = () => {
@@ -160,8 +160,8 @@ export const Donate = () => {
           <p className="mb-3">
             Every contribution, no matter the size, makes a difference. Thank you for your generosity and support.
           </p>
-    </div>
-    </div>
-  </>
+        </div>
+      </div>
+    </>
   );
 };
