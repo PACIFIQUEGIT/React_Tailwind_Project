@@ -26,18 +26,24 @@ export const Navbar = () => {
         {/* Desktop Links */}
         <div className="hidden md:flex space-x-6">
           <Link to="/" className="hover:text-yellow-500 transition-colors py-3">Home</Link>
-          <div className="relative group py-3"> {/* Add group class to enable hover for child elements */}
+          <div className="relative py-3"> {/* Add group class to enable hover for child elements */}
             <Link 
-              to="/about" 
+              onClick={toggleDropdown}
               className="hover:text-yellow-500 transition-colors py-3 "
             >
               About Us
             </Link>
 
             {/* Dropdown Menu for desktop */}
-            <div 
+            <div onClick={toggleDropdown}
               className={`absolute left-0 mt-2 w-48 bg-gray-800 text-white rounded-lg shadow-lg z-10 opacity-0 group-hover:opacity-100 group-hover:visible transition-opacity duration-300 ${isDropdownOpen ? 'visible opacity-100' : ''}`}
             >
+              <Link 
+              to="/about" 
+              className="block px-4 py-2 hover:bg-green-500"
+            >
+              About Us
+            </Link>
               <Link 
                 to="/whatwedo" 
                 className="block px-4 py-2 hover:bg-green-500"
@@ -77,18 +83,24 @@ export const Navbar = () => {
       {isMobileMenuOpen && (
         <div className="sm:hidden bg-gray-800 text-white flex flex-col items-start w-full py-2">
           <Link onClick={toggleMobileMenu} to="/" className="hover:text-yellow-500 transition-colors py-3">Home</Link>
-          <div className="relative group"> {/* Add group class to enable hover for child elements */}
-            <Link onClick={toggleMobileMenu}
-              to="/about" 
+          <div  className="relative"> {/* Add group class to enable hover for child elements */} 
+            <Link onClick={toggleDropdown}
+              
               className="hover:text-yellow-500 transition-colors py-3"
             >
               About Us
             </Link>
 
             {/* Dropdown Menu for desktop */}
-            <div 
+            <div onClick={toggleDropdown}
               className={`absolute left-16 mt-2 w-48 bg-gray-800 text-white rounded-lg shadow-lg z-10 opacity-0 group-hover:opacity-100 group-hover:visible transition-opacity duration-300 ${isDropdownOpen ? 'visible opacity-100' : ''}`}
             >
+              <Link onClick={toggleMobileMenu}
+              to="/about" 
+              className="block px-4 py-2 hover:bg-green-500"
+              >
+              About Us
+              </Link>
               <Link onClick={toggleMobileMenu}
                 to="/whatwedo" 
                 className="block px-4 py-2 hover:bg-green-500"
@@ -113,19 +125,7 @@ export const Navbar = () => {
           <Link onClick={toggleMobileMenu} to="/donate" className="hover:text-yellow-500 transition-colors bg-green-500 text-white px-5 py-3 rounded-lg">Donate</Link>
         </div>
       )}
-      {isDropdownOpen && (
-        <div className="sm:hidden bg-gray-800 text-white flex flex-col items-center w-full py-2">
-          <Link onClick={toggleMobileMenu} to="/whatwedo" className="block px-4 py-2 hover:bg-green-500">
-            What We Do
-          </Link>
-          <Link onClick={toggleMobileMenu} to="/ourmission" className="block px-4 py-2 hover:bg-green-500">
-            Our Mission
-          </Link>
-          <Link onClick={toggleMobileMenu} to="/newsletter" className="block px-4 py-2 hover:bg-green-500">
-            Newsletter
-          </Link>
-        </div>
-      )}
+      
     </div>
   );
 };
