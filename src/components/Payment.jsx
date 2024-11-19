@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import { FaCcVisa, FaCcMastercard, FaCcPaypal } from "react-icons/fa";
+import { IoIosArrowDown } from "react-icons/io";
 
 export const Payment = () => {
   // State to handle dropdown visibility
@@ -27,15 +28,17 @@ export const Payment = () => {
         </div>
       </div>
 
-      <div className="flex justify-center p-6">
+      <div className="flex justify-center bg-gray-300 p-6">
         <div className="w-full max-w-3xl text-center">
           {/* Custom Dropdown for Payment Method */}
+          <h1 className='font-bold text-[30px] mb-4'>Payment Details</h1>
+          <div className='shadow-lg bg-white p-5 mb-5'>
           <div className="space-y-3 mb-5">
             <div className="relative">
               <button 
                 onClick={toggleDropdown} 
-                className="bg-blue-500 text-white py-2 px-4 rounded-lg text-left focus:outline-none">
-                Choose Payment Method
+                className="py-2 rounded-lg  focus:outline-none">
+                <div className='flex'>Select Payment Method <IoIosArrowDown className='mt-2' /></div>
               </button>
 
               {/* Dropdown menu */}
@@ -43,7 +46,7 @@ export const Payment = () => {
                 <div className="absolute top-0 left-[64%] bg-white shadow-lg rounded-lg">
                   <div className="py-2">
                     <Link onClick={toggleDropdown}  to="card" className="block py-2 text-blue-500 hover:bg-gray-200">Pay with Card</Link>
-                    <Link onClick={toggleDropdown}  to="#" className="block py-2 text-blue-500 hover:bg-gray-200">Pay with PayPal</Link>
+                    <Link onClick={toggleDropdown}  to="paypal" className="block py-2 text-blue-500 hover:bg-gray-200">Pay with PayPal</Link>
                   </div>
                 </div>
               )}
@@ -51,10 +54,10 @@ export const Payment = () => {
           </div>
 
           {/* Payment Card Section */}
-          <div className="h-[300px] w-full max-w-md mx-auto border bg-gray-800 p-4 mb-4">
+          <div className="h-[300px] w-full max-w-md mx-auto p-4 mb-4">
             <Outlet />
           </div>
-
+          </div>
           {/* Payment Icons */}
           <div className="flex justify-center space-x-5 mb-4">
             <FaCcVisa className="text-[50px] text-blue-600" />

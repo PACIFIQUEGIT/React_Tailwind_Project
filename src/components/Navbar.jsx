@@ -128,7 +128,7 @@ export const Navbar = () => {
             </div>
           </div>
           <Link onClick={toggleMobileMenu} to="/contact" className="hover:text-yellow-500 transition-colors py-3">Contact Us</Link>
-          <Link
+          <Link onClick={toggleMobileMenu}
             to="/login"
             className="hover:text-yellow-500 transition-colors py-3"
           >
