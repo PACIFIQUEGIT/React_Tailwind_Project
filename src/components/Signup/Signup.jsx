@@ -3,8 +3,24 @@ import { IoMdArrowBack } from "react-icons/io";
 import { Link } from "react-router-dom";
 
 const Signup = () => {
-  return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 pt-32">
+  return (<>
+    <div className="bg-gray-900 text-white p-4 shadow-md">
+        <div className="flex items-center justify-between max-w-6xl mx-auto">
+          {/* Logo */}
+          <div className="text-2xl font-bold">
+            <span className="text-yellow-500">Charity</span>
+          </div>
+
+          {/* Links */}
+          <div className="hidden md:flex space-x-6">
+            <Link to="/" className="hover:text-yellow-500 transition-colors py-3">Home</Link>
+            <Link to="/about" className="hover:text-yellow-500 transition-colors py-3">About</Link>
+            <Link to="/contact" className="hover:text-yellow-500 transition-colors py-3">Contact</Link>
+            <Link to="/donate" className="hover:text-yellow-500 transition-colors bg-green-500 text-white px-5 py-3 rounded-lg">Donate</Link>
+          </div>
+        </div>
+      </div>
+    <div className="my-4 flex items-center justify-center bg-gray-100">
       <div data-aos="zoom-in" className="w-full md:w-4/5 lg:w-3/5 xl:w-1/2">
         <div className="checkout flex flex-col md:flex-row rounded-lg shadow-lg overflow-hidden">
           <div className="left-side flex-none md:w-1/2 relative">
@@ -89,6 +105,7 @@ const Signup = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
