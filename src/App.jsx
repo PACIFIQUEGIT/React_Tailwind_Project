@@ -16,6 +16,7 @@ import  ScrollToTop  from './components/ScrollToTop';
 import { Whatwedo } from './components/Whatwedo';
 import { Ourmission } from './components/Ourmission';
 import Login from './components/Login/Login';
+import Signup from './components/Signup/Signup';
 
 
 function App() {
@@ -32,7 +33,8 @@ function App() {
         <Route path="/pdf" element={<Pdf />} />
         <Route path="/pdf1" element={<Pdf1 />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/contact" element={<Login />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
         <Route path="/donate" element={<Donate />} />
         {/* Corrected the path for the Card route */}
         <Route path="/payment" element={<Payment />}>

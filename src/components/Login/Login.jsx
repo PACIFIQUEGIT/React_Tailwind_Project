@@ -21,7 +21,7 @@ const Login = () => {
           <div className="right-side w-full md:w-1/2 p-8 bg-white">
             <Link to="/#" className="flex items-center mb-6">
               <IoMdArrowBack className="text-primary text-2xl mr-2" />
-              <span className="text-primary font-semibold">Home</span>
+              <span className="text-green-500 font-semibold">Home</span>
             </Link>
 
             <h1 className="text-3xl font-bold mb-6">Sign in</h1>
@@ -66,7 +66,7 @@ const Login = () => {
                 <span>Don't have an account?</span>
                 <Link
                   to="/Signup"
-                  className="text-primary ml-2 font-semibold hover:text-primary-dark transition duration-300"
+                  className="text-green-500 ml-2 font-semibold hover:text-primary-dark transition duration-300"
                 >
                   Sign up here
                 </Link>
