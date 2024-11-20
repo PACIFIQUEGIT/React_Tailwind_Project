@@ -139,7 +139,7 @@ export const Home = () => {
           <div className="h1 font-bold text-lg pl-2 pt-2">Become volunteer</div>
         </div>
         <p>Charity law within Africa varies among <u>Countries</u> but the fundamental principles are the same.</p>
-          <button onClick={handleSubmit} className="bg-green-500 text-[12px] text-white font-bold py-4 px-10 m-4">DONATE</button>
+          <button onClick={handleSubmit} className="bg-green-500 text-[12px] text-white font-bold py-4 px-10 m-4">DONATE NOW</button>
             </div>
           </div>
     <div>
