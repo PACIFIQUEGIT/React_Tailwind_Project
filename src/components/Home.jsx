@@ -224,38 +224,6 @@ export const Home = () => {
         </p>
       </div>
 
-      {/* <div className="flex ml-16 mr-16 mb-10">
-        <div className="p-10">
-          <img src="https://media.istockphoto.com/id/490400030/photo/climate-change-symbol-handful-of-water-scarsity-for-africa-symbol.jpg?s=612x612&w=0&k=20&c=aOPdXKpQz9it0VIWvM_RCegJVg8ZCEBN6lKkwyz5FEY="></img>
-          <h1>CLEAN WATER </h1>
-          <p>
-            Access to clean water is a fundamental human right, yet many
-            children around the world still suffer from water scarcity. Our
-            mission is to provide safe and clean drinking water to children in
-            underserved communities.
-          </p>
-        </div>
-        <div className="p-10">
-          <img src="https://media.istockphoto.com/id/647452298/photo/malindi-kenya-children-from-small-local-village-attending-open-air-primary-school.jpg?s=612x612&w=0&k=20&c=wsVAx6Iy8cSrbKH8wPf9G4qV4VvFrG7rGMWsa4Tw4QU="></img>
-          <h1>EDUCATION FOR CHILDREN </h1>
-          <p>
-            Education is the key to breaking the cycle of poverty and unlocking
-            a brighter future. We are dedicated to providing quality education
-            to children in need, giving them the tools and opportunities to
-            succeed.
-          </p>
-        </div>
-
-        <div className="p-10">
-          <img src="https://media.istockphoto.com/id/1185362250/photo/african-child-in-a-village-near-kalahari-desert.jpg?s=612x612&w=0&k=20&c=WfrHnH4Vrl9ItcrRzHMPygqTsXPkS4noHl68ubV-dF8="></img>
-          <h1>CHILDREN  WITH HUNGER</h1>
-          <p>
-            most of countries in africa are suffering from hunger and malnutrion and are not getting enough food to eat.
-            your help could help them to get foods and seves their lives.
-          </p>
-        </div>
-      </div> */}
-
       <div className="flex flex-wrap justify-center gap-10 ml-16 mr-16 mb-10">
         <div className="p-5 bg-white rounded-lg shadow-lg w-96 md:w-[28rem]">
           <img
