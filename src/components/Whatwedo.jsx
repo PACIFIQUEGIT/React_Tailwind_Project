@@ -29,18 +29,20 @@ export const Whatwedo = () => {
     <div className="flex flex-col md:flex-col justify-between px-7 py-[50px]">
         <div className="left">
           <h4 className="flex"><GoDot className="mt-2" /><GoDot className="mt-2" />What we do</h4>
-          <h1 className="lg:text-[23px] text-[30px] font-bold my-5 pr-11">Various things we help in whole world</h1>
-          <p>At  our oganization we are committed to making a lasting impact in Rwanda by addressing key social, 
+          <div className='flex flex-col items-center justify-center'>
+          <h1 className="lg:text-[23px] text-[30px] self-center font-bold my-5">Various things we help in whole world</h1>
+          <p className='self-center w-[77%]'>At  our oganization we are committed to making a lasting impact in Rwanda by addressing key social, 
              economic, and environmental challenges. Guided by our mission and vision, we aim to uplift communities, 
              create opportunities, and ensure a brighter future for everyone.
           </p>
+          </div>
         </div>
         <div>
         <h1 className="lg:text-[23px] text-[30px] font-bold mt-11 my pr-11">Our Focus Areas</h1>
         <div className="right grid md:grid-cols-3 gap-4 mt-5">
           {/* Top Row Icons */}
           <div className="flex mb-4">
-            <div className="ic mr-2"><GoLightBulb className="text-[50px] text-yellow-500" /></div>
+            <div className="ic mr-2"><GoLightBulb className="text-[30px] text-yellow-500" /></div>
             <div className="co">
               <h4 className="font-bold text-[28px]">Education for All</h4>
               <p className="text-[17px]">We believe in the power of education to transform lives. Our programs focus 
@@ -50,7 +52,7 @@ export const Whatwedo = () => {
             </div>
           </div>
           <div className="flex mb-4">
-            <div className="ic mr-2"><GiHealthCapsule className="text-[50px] text-red-500" /></div>
+            <div className="ic mr-2"><GiHealthCapsule className="text-[30px] text-red-500" /></div>
             <div className="co">
               <h4 className="font-bold text-[28px]">Healthcare and Wellness</h4>
               <p className="text-[17px]">Ensuring access to healthcare is one of our top priorities. Through health 
@@ -59,7 +61,7 @@ export const Whatwedo = () => {
             </div>
           </div>
           <div className="flex mb-4">
-            <div className="ic mr-2"><GiReceiveMoney className="text-[50px]" /></div>
+            <div className="ic mr-2"><GiReceiveMoney className="text-[30px]" /></div>
             <div className="co">
               <h4 className="font-bold text-[28px]">Economic Empowerment</h4>
               <p className="text-[17px]">To fight poverty, we empower individuals and families with vocational 
@@ -69,14 +71,14 @@ export const Whatwedo = () => {
             </div>
           </div>
           <div className="flex mb-4">
-            <div className="ic mr-2"><MdOutlineWaterDrop className="text-[50px] text-blue-400" /></div>
+            <div className="ic mr-2"><MdOutlineWaterDrop className="text-[30px] text-blue-400" /></div>
             <div className="co">
               <h4 className="font-bold text-[28px]">Water delivery</h4>
               <p className="text-[17px]">Starry flounder sablefish yellowtail barracuda long-finned</p>
             </div>
           </div>
           <div className="flex mb-4">
-            <div className="ic mr-2"><PiTreeEvergreen className="text-[50px] text-green-500" /></div>
+            <div className="ic mr-2"><PiTreeEvergreen className="text-[30px] text-green-500" /></div>
             <div className="co">
               <h4 className="font-bold text-[28px]"> Environmental Conservation</h4>
               <p className="text-[17px]">Protecting Rwanda’s natural resources is central to our work. We run 
@@ -85,9 +87,9 @@ export const Whatwedo = () => {
               </p>
             </div>
           </div>
-          {/* Bottom Row Icons */}
+          
           <div className="flex mb-4">
-            <div className="ic mr-2"><BsHouse className="text-[50px] text-orange-500" /></div>
+            <div className="ic mr-2"><BsHouse className="text-[30px] text-orange-500" /></div>
             <div className="co">
               <h4 className="font-bold text-[28px]">Emergency Relief</h4>
               <p className="text-[17px]">In times of natural disasters or emergencies, we step in to provide immediate 
@@ -99,6 +101,7 @@ export const Whatwedo = () => {
           
         </div>
         </div>
+        {/* Bottom Row Icons 
         <div>
         <h1 className="lg:text-[23px] text-[30px] font-bold mt-11 my pr-11">Our Impact</h1>
         <p>Since our inception, we have made significant strides in changing lives across Rwanda. From providing 
@@ -112,7 +115,7 @@ export const Whatwedo = () => {
            implement effective solutions. Transparency, sustainability, and accountability are at the core of 
            everything we do.
         </p>
-        </div>
+        </div> */}
     </div>
 
 

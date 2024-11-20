@@ -30,7 +30,7 @@ export const Contact = () => {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row bg-black p-11 md:px-24">
+      <div className="flex flex-col md:flex-row bg-black p-11 m-10 md:px-24">
         {/* Left Side */}
         <div className="left w-full md:w-1/2 text-white mb-8 md:mb-0">
           <h1 className="font-bold text-[25px] mb-5">Want to get involved?</h1>

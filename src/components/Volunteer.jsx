@@ -31,29 +31,24 @@ export const Volunteer = () => {
       <div className="flex flex-col md:flex-row bg-gray-300 p-6 md:p-12">
         {/* Left Side */}
         <div className="left p-7 px-12 bg-green-500 w-full md:w-1/2 text-white">
-          <h1 className="bg-white w-7 h-1 mb-4"></h1>
-          <h1 className="font-bold text-[25px] mb-5">Would you like to become a volunteer?</h1>
-          <p className='mb-7'>Share with us your toughts and your ideas which could help us to improve with your help.</p>
-
-          <p className="text-gray-300 mb-3">Box 3233</p>
-          <p className="text-gray-300 mb-3">1810 Kings Way</p>
-          <p className="text-gray-300 mb-3">King Street, 5th Avenue, New York</p>
-
-          <div className="flex items-center mt-3 mb-3">
-            <FaPhoneAlt className="text-white mr-3" size={20} />
-            <div className="text-lg">New York: 1800-2355-2356</div>
+            <h1 className="bg-white w-7 h-1 mb-4"></h1>
+            <h1 className="font-bold text-[25px] mb-5">Give your hand</h1>
+            <h1 className="font-bold text-[25px] mb-5">
+              Become a Volunteer Today!
+            </h1>
+            <p className="mb-7">
+              Your time, skills, and ideas can create a lasting impact.
+              Together, we can build stronger communities, bring hope, and make
+              the world a better place. Take the first step toward making a
+              difference because every hand matters.
+              <br />
+              <br />
+              Whether it’s a few hours a week or a single act of kindness, your
+              contribution can spark change, inspire others, and leave a legacy
+              of compassion. Join us and be a part of something extraordinary
+              because together, we can achieve the unimaginable.
+            </p>
           </div>
-          
-          <div className="flex items-center mb-3">
-            <IoMdTime className="text-white mr-3" size={20} />
-            <div className="text-lg">Mon - Fri: 8:00 am - 6:00 pm</div>
-          </div>
-
-          <div className="flex items-center mb-3">
-            <HiOutlineMailOpen className="text-white mr-3" size={20} />
-            <div className="text-lg">contact@Chariti.theme</div>
-          </div>
-        </div>
 
         {/* Right Side (Form Section) */}
         <div className="right w-full md:w-1/2 lg:mt-0 mt-4 md:px-12">
