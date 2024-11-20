@@ -35,7 +35,7 @@ export const Navbar = () => {
             </Link>
 
             {/* Dropdown Menu for desktop */}
-            <div onClick={toggleDropdown}
+            <div 
               className={`absolute left-0 mt-2 w-48 bg-gray-800 text-white rounded-lg shadow-lg z-10 opacity-0 group-hover:opacity-100 group-hover:visible transition-opacity duration-300 ${isDropdownOpen ? 'visible opacity-100' : ''}`}
             >
               <Link 
@@ -90,7 +90,7 @@ export const Navbar = () => {
       {isMobileMenuOpen && (
         <div className="sm:hidden bg-gray-800 text-white flex flex-col items-start w-full py-2">
           <Link onClick={toggleMobileMenu} to="/" className="hover:text-yellow-500 transition-colors py-3">Home</Link>
-          <div  className="relative group"> {/* Add group class to enable hover for child elements */} 
+          <div  className="relative"> {/* Add group class to enable hover for child elements */} 
             <Link onClick={toggleDropdown}
               
               className="hover:text-yellow-500 transition-colors py-3"
