@@ -26,9 +26,9 @@ export const Navbar = () => {
         {/* Desktop Links */}
         <div className="hidden md:flex space-x-6">
           <Link to="/" className="hover:text-yellow-500 transition-colors py-3">Home</Link>
-          <div className="relative py-3"> {/* Add group class to enable hover for child elements */}
+          <div className="relative group py-3"> {/* Add group class to enable hover for child elements */}
             <Link 
-              onClick={toggleDropdown}
+              
               className="hover:text-yellow-500 transition-colors py-3 "
             >
               About Us
@@ -90,7 +90,7 @@ export const Navbar = () => {
       {isMobileMenuOpen && (
         <div className="sm:hidden bg-gray-800 text-white flex flex-col items-start w-full py-2">
           <Link onClick={toggleMobileMenu} to="/" className="hover:text-yellow-500 transition-colors py-3">Home</Link>
-          <div  className="relative"> {/* Add group class to enable hover for child elements */} 
+          <div  className="relative group"> {/* Add group class to enable hover for child elements */} 
             <Link onClick={toggleDropdown}
               
               className="hover:text-yellow-500 transition-colors py-3"
