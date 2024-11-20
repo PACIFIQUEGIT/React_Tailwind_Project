@@ -316,22 +316,22 @@ export const Home = () => {
       <div className="flex justify-around my-7 flex-wrap">
         <div className="p-5 relative text-center">
           <div className="bg-green-100 rounded-full p-10 mx-auto"></div>
-          <h1 className="absolute font-bold left-6 top-0 text-[40px]">1M</h1>
+          <h1 className="absolute font-bold left-6 top-0 text-[40px]">50</h1>
           <div className="absolute left-1 top-14">Monthly Visitors</div>
         </div>
         <div className="p-5 px-11 relative text-center">
           <div className="bg-green-100 rounded-full p-10 mx-auto"></div>
-          <h1 className="absolute font-bold left-10 top-0 text-[40px]">20M</h1>
+          <h1 className="absolute font-bold left-10 top-0 text-[40px]">100</h1>
           <div className="absolute left-2 top-14">Volunteers Connected</div>
         </div>
         <div className="p-5 px-11 relative text-center">
           <div className="bg-green-100 rounded-full p-10 mx-auto"></div>
-          <h1 className="absolute font-bold left-14 top-0 text-[40px]">80</h1>
+          <h1 className="absolute font-bold left-14 top-0 text-[40px]">20</h1>
           <div className="absolute left-2 top-14">Countries Worldwide</div>
         </div>
         <div className="p-5 px-11 relative text-center">
           <div className="bg-green-100 rounded-full p-10 mx-auto"></div>
-          <h1 className="absolute font-bold left-10 top-0 text-[40px]">2M</h1>
+          <h1 className="absolute font-bold left-10 top-0 text-[40px]">45</h1>
           <div className="absolute left-2 top-14">Volunteers Needed</div>
         </div>
       </div>
