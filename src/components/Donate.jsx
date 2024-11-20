@@ -119,7 +119,7 @@ const Donate = () => {
                 className={`px-6 py-3 rounded-lg flex items-center transition-all ${
                   paymentMethod === "paypal"
                     ? "bg-blue-600 text-white scale-105"
-                    : "bg-blue-100 text-blue-800 hover:bg-blue-200"
+                    : "bg-yellow-500 text-white font-bold hover:bg-green-500"
                 }`}
                 onClick={() => setPaymentMethod("paypal")}
               >
@@ -129,7 +129,7 @@ const Donate = () => {
                 className={`px-6 py-3 rounded-lg flex items-center transition-all ${
                   paymentMethod === "card"
                     ? "bg-green-600 text-white scale-105"
-                    : "bg-green-100 text-green-800 hover:bg-green-200"
+                    : "bg-green-100 text-green-800 hover:bg-green-200 font-bold"
                 }`}
                 onClick={() => setPaymentMethod("card")}
               >
@@ -230,34 +230,7 @@ const Donate = () => {
       </div>
 
       {/* PayPal Button Integration */}
-      {paymentMethod === "paypal" && (
-        <PayPalScriptProvider options={{ "client-id": "your-client-id" }}>
-          <PayPalButtons
-            style={{ layout: "vertical" }}
-            createOrder={(data, actions) => {
-              return actions.order.create({
-                purchase_units: [
-                  {
-                    amount: {
-                      value: amount.toString(),
-                    },
-                  },
-                ],
-              });
-            }}
-            onApprove={(data, actions) => {
-              return actions.order.capture().then(function (details) {
-                alert("Donation completed successfully!");
-                // Handle successful donation
-              });
-            }}
-            onError={(err) => {
-              alert("Error processing payment");
-              console.error(err);
-            }}
-          />
-        </PayPalScriptProvider>
-      )}
+     
     </div>
   );
 };
