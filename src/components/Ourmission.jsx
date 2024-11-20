@@ -29,28 +29,32 @@ export const Ourmission = () => {
       <div className="flex flex-col md:flex-col justify-between px-7 py-[50px]">
         
         {/*  <h4 className="flex"><GoDot className="mt-2" /><GoDot className="mt-2" />Our Mission | Our Vision | Our Values</h4> */}
-        <div className='flex px-11 pt-4 gap-7'> 
-        <div className="left shadow-xl p-5">
-          <h1 className="lg:text-[23px] text-[30px] font-bold my-5 pr-11">Our Mission</h1>
-          <p>We strive to make a profound and lasting impact in the lives of individuals and communities across Rwanda. 
-             Our mission is to tackle critical challenges in education, healthcare, economic development, and 
-             environmental conservation. By creating opportunities, promoting equality, and fostering sustainability, we 
-             aim to empower individuals to rise above their circumstances and build a better future for themselves and 
-             their families.
+        <div className='flex flex-col lg:flex-row px-4 pt-4 gap-7 lg:px-11'>
+          {/* Left section */}
+          <div className="left shadow-xl p-5 lg:w-1/2">
+    <h1 className="lg:text-[23px] text-[30px] font-bold my-5 pr-11">Our Mission</h1>
+    <p>
+      We strive to make a profound and lasting impact in the lives of individuals and communities across Rwanda. 
+      Our mission is to tackle critical challenges in education, healthcare, economic development, and 
+      environmental conservation. By creating opportunities, promoting equality, and fostering sustainability, we 
+      aim to empower individuals to rise above their circumstances and build a better future for themselves and 
+      their families.
+    </p>
+          </div>
 
-          </p>
+          {/* Right section */}
+          <div className='shadow-xl p-5 lg:w-1/2'>
+    <h1 className="lg:text-[23px] text-[30px] font-bold mt-11 my-5 pr-11">Our Vision</h1>
+    <p>
+      We envision a Rwanda where every person, regardless of their background or circumstances, can thrive. Our 
+      vision is of a nation where access to education, healthcare, and economic opportunities is universal, where 
+      communities work hand-in-hand to preserve and protect their environment, and where every individual is 
+      empowered to live a life of dignity, independence, and fulfillment. Together, we are building a brighter and 
+      more inclusive future for all.
+    </p>
+          </div>
         </div>
-        <div className='shadow-xl p-5'>
-        <h1 className="lg:text-[23px] text-[30px] font-bold mt-11 my pr-11">Our Vision</h1>
-        <p>We envision a Rwanda where every person, regardless of their background or circumstances, can thrive. Our 
-           vision is of a nation where access to education, healthcare, and economic opportunities is universal, where 
-           communities work hand-in-hand to preserve and protect their environment, and where every individual is 
-           empowered to live a life of dignity, independence, and fulfillment. Together, we are building a brighter and 
-           more inclusive future for all.
 
-        </p>
-        </div>
-        </div> 
         <div>
         <h1 className="lg:text-[23px] text-[30px] font-bold mt-11 my pr-11">Our Values</h1>
         <div className="right grid md:grid-cols-3 gap-4 mt-5">

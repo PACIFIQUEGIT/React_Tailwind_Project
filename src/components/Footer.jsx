@@ -33,7 +33,7 @@ export const Footer = () => {
                 </Link>
               </li>
               <li>
-                <div className="relative group">
+                <div className="relative">
                   {" "}
                   {/* Add group class to enable hover for child elements */}
                   <Link onClick={toggleDropdown}
