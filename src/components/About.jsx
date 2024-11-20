@@ -40,7 +40,7 @@ export const About = () => {
         }}
       >
         <div className='m-11 p-11 py-[10px] text-white font-bold text-[40px] md:text-[60px] lg:text-[100px]'>
-          About
+          About Us
         </div>
       </div>
 
@@ -69,7 +69,7 @@ export const About = () => {
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
-            height: '300px',
+            height: '350px',
           }}
         ></div>
 

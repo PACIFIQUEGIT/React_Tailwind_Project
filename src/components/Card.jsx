@@ -29,10 +29,18 @@ export const Card = () => {
             />
           </div>
 
-          <div className="mb-4">
+          <div className="mb-4 flex gap-2">
             <input 
               className="text-black border border-black w-full h-12 px-3 rounded-lg"
-              placeholder="Pin"
+              placeholder="Expiry Date (MM/YY)"
+              type="text"
+              value={pin}
+              onChange={(e) => setPin(e.target.value)}
+              required 
+            />
+            <input 
+              className="text-black border border-black w-full h-12 px-3 rounded-lg"
+              placeholder="CVC"
               type="text"
               value={pin}
               onChange={(e) => setPin(e.target.value)}
@@ -43,7 +51,7 @@ export const Card = () => {
           <div className="mb-4">
             <input 
               className="text-black border border-black w-full h-12 px-3 rounded-lg"
-              placeholder="Expiration Date"
+              placeholder="Name on Card"
               type="text"
               value={expirationDate}
               onChange={(e) => setExpirationDate(e.target.value)}
@@ -53,7 +61,7 @@ export const Card = () => {
 
           <div>
             <button type="submit" className="bg-green-500 text-white px-6 py-3 w-full md:w-auto rounded-lg font-bold">
-              <b>PAY</b>
+              <b>Pay</b>
             </button>
           </div>
         </form>

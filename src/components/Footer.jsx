@@ -33,21 +33,26 @@ export const Footer = () => {
                 </Link>
               </li>
               <li>
-                <div className="relative group">
+                <div className="relative">
                   {" "}
                   {/* Add group class to enable hover for child elements */}
-                  <Link
-                    to="/about"
+                  <Link onClick={toggleDropdown}
                     className="hover:text-yellow-500 transition-colors py-3"
                   >
                     About Us
                   </Link>
                   {/* Dropdown Menu for desktop */}
-                  <div
+                  <div onClick={toggleDropdown}
                     className={`absolute left-16 mt-2 w-48 bg-gray-800 text-white rounded-lg shadow-lg z-10 opacity-0 group-hover:opacity-100 group-hover:visible transition-opacity duration-300 ${
                       isDropdownOpen ? "visible opacity-100" : ""
                     }`}
                   >
+                    <Link
+                    to="/about"
+                    className="block px-4 py-2 hover:bg-green-500"
+                  >
+                    About Us
+                  </Link>
                     <Link
                       to="/whatwedo"
                       className="block px-4 py-2 hover:bg-green-500"

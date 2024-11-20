@@ -33,24 +33,26 @@ export const Navbar = () => {
             >
               About Us
             </Link>
+
             {/* Dropdown Menu for desktop */}
-            <div
-              className={`absolute left-0 mt-2 w-48 bg-gray-800 text-white rounded-lg shadow-lg z-10 opacity-0 group-hover:opacity-100 group-hover:visible transition-opacity duration-300 ${
-                isDropdownOpen ? "visible opacity-100" : ""
-              }`}
-            >
-              
             <div onClick={toggleDropdown}
-              className={`absolute left-0 mt-2 w-48 bg-gray-800 text-white rounded-lg shadow-lg z-10 opacity-0 group-hover:opacity-100 group-hover:visible transition-opacity duration-300 ${isDropdownOpen ? 'visible opacity-100' : ''}`} >
-              <Link
-                to="/whatwedo"
+              className={`absolute left-0 mt-2 w-48 bg-gray-800 text-white rounded-lg shadow-lg z-10 opacity-0 group-hover:opacity-100 group-hover:visible transition-opacity duration-300 ${isDropdownOpen ? 'visible opacity-100' : ''}`}
+            >
+              <Link 
+              to="/about" 
+              className="block px-4 py-2 hover:bg-green-500"
+            >
+              About Us
+            </Link>
+              <Link 
+                to="/whatwedo" 
                 className="block px-4 py-2 hover:bg-green-500"
               >
 
                 What We Do
               </Link>
-              <Link
-                to="/ourmission"
+              <Link 
+                to="/ourmission" 
                 className="block px-4 py-2 hover:bg-green-500"
               >
                 Our Mission
@@ -63,29 +65,22 @@ export const Navbar = () => {
               </Link>
             </div>
           </div>
-          <Link
-            to="/contact"
-            className="hover:text-yellow-500 transition-colors py-3"
-          >
-            Contact Us
-          </Link>
+          <Link to="/contact" className="hover:text-yellow-500 transition-colors py-3">Contact Us</Link>
           <Link
             to="/login"
             className="hover:text-yellow-500 transition-colors py-3"
           >
            Login
           </Link>
-          <Link
-            to="/donate"
-            className="hover:text-yellow-500 transition-colors bg-green-500 text-white px-5 py-3 rounded-lg"
-          >
-            Donate Now
-          </Link>
+          <Link to="/donate" className="hover:text-yellow-500 transition-colors bg-green-500 text-white px-5 py-3 rounded-lg">Donate</Link>
         </div>
 
         {/* Mobile Menu Toggle Button */}
         <div className="sm:hidden flex items-center p-1">
-          <button onClick={toggleMobileMenu} className="text-white p-2">
+          <button 
+            onClick={toggleMobileMenu}
+            className="text-white p-2"
+          >
             ☰
           </button>
         </div>
@@ -102,11 +97,10 @@ export const Navbar = () => {
             >
               About Us
             </Link>
+
             {/* Dropdown Menu for desktop */}
-            <div
-              className={`absolute left-16 mt-2 w-48 bg-gray-800 text-white rounded-lg shadow-lg z-10 opacity-0 group-hover:opacity-100 group-hover:visible transition-opacity duration-300 ${
-                isDropdownOpen ? "visible opacity-100" : ""
-              }`}
+            <div onClick={toggleDropdown}
+              className={`absolute left-16 mt-2 w-48 bg-gray-800 text-white rounded-lg shadow-lg z-10 opacity-0 group-hover:opacity-100 group-hover:visible transition-opacity duration-300 ${isDropdownOpen ? 'visible opacity-100' : ''}`}
             >
               
             <div onClick={toggleDropdown}
@@ -124,25 +118,23 @@ export const Navbar = () => {
               >
                 What We Do
               </Link>
-              <Link
-                onClick={toggleMobileMenu}
-                to="/ourmission"
+              <Link onClick={toggleMobileMenu}
+                to="/ourmission" 
                 className="block px-4 py-2 hover:bg-green-500"
               >
                 Our Mission
               </Link>
-              <Link
-                onClick={toggleMobileMenu}
-                to="/newsletter"
+              <Link onClick={toggleMobileMenu}
+                to="/newsletter" 
                 className="block px-4 py-2 hover:bg-green-500"
               >
                 Newsletter
               </Link>
             </div>
           </div>
-          <Link
-            onClick={toggleMobileMenu}
-            to="/contact"
+          <Link onClick={toggleMobileMenu} to="/contact" className="hover:text-yellow-500 transition-colors py-3">Contact Us</Link>
+          <Link onClick={toggleMobileMenu}
+            to="/login"
             className="hover:text-yellow-500 transition-colors py-3"
           >
             Contact Us
@@ -181,9 +173,15 @@ export const Navbar = () => {
           >
             Newsletter
           </Link>
+          <Link onClick={toggleMobileMenu} to="/donate" className="hover:text-yellow-500 transition-colors bg-green-500 text-white px-5 py-3 rounded-lg">Donate</Link>
         </div>
       )}
+      
     </div>
-     </div>
+     
   );
 };
+
+
+
+

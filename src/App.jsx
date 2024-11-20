@@ -17,6 +17,7 @@ import { Whatwedo } from './components/Whatwedo';
 import { Ourmission } from './components/Ourmission';
 import Login from './components/Login/Login';
 import Signup from './components/Signup/Signup';
+import { Paypal } from './components/Paypal';
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
         {/* Corrected the path for the Card route */}
         <Route path="/payment" element={<Payment />}>
           <Route path="card" element={<Card />} />
+          <Route path="paypal" element={<Paypal />} />
         </Route>
         <Route path="/volunteer" element={<Volunteer />} />
       </Routes>

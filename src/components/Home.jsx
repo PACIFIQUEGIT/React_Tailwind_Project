@@ -13,6 +13,7 @@ import { Link } from 'react-router-dom';
 import { FaPhoneAlt } from "react-icons/fa";
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { IoMdTime } from "react-icons/io";
+import { About } from './About';
 
 export const Home = () => {
   const navigate = useNavigate();
@@ -22,9 +23,9 @@ export const Home = () => {
     navigate('/donate');
   }
 
-  const newsletter = (e) => {
+  const About = (e) => {
     e.preventDefault();
-    navigate('/newsletter');
+    navigate('/About');
   }
 
   return (
@@ -106,7 +107,7 @@ export const Home = () => {
         <b>Most organizations</b> that are charities.
       </p>
           <button className="bg-white text-black px-4 py-2 mt-4 flex items-center">
-            <b onClick={newsletter} >LEARN MORE</b>
+            <b onClick={About} >LEARN MORE</b>
         <FaLongArrowAltRight className="ml-2" />
       </button>
     </div>
