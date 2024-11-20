@@ -191,7 +191,7 @@ const Donate = () => {
 
               <button
                 type="submit"
-                className="w-full bg-green-600 text-white py-4 rounded-lg hover:bg-green-700 transition-colors flex items-center justify-center"
+                className="w-full bg-green-600 text-white py-4 rounded-lg hover:bg-green-700 transition-colors flex items-center justify-center font-bold"
               >
                 <Heart className="mr-2" size={24} />
                 Donate {amount} USD{" "}
