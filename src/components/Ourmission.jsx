@@ -27,8 +27,10 @@ export const Ourmission = () => {
       </div>
 
       <div className="flex flex-col md:flex-col justify-between px-7 py-[50px]">
-        <div className="left">
-          <h4 className="flex"><GoDot className="mt-2" /><GoDot className="mt-2" />Our Mission | Our Vision | Our Values</h4>
+        
+        {/*  <h4 className="flex"><GoDot className="mt-2" /><GoDot className="mt-2" />Our Mission | Our Vision | Our Values</h4> */}
+        <div className='flex px-11 pt-4 gap-7'> 
+        <div className="left shadow-xl p-5">
           <h1 className="lg:text-[23px] text-[30px] font-bold my-5 pr-11">Our Mission</h1>
           <p>We strive to make a profound and lasting impact in the lives of individuals and communities across Rwanda. 
              Our mission is to tackle critical challenges in education, healthcare, economic development, and 
@@ -38,7 +40,7 @@ export const Ourmission = () => {
 
           </p>
         </div>
-        <div>
+        <div className='shadow-xl p-5'>
         <h1 className="lg:text-[23px] text-[30px] font-bold mt-11 my pr-11">Our Vision</h1>
         <p>We envision a Rwanda where every person, regardless of their background or circumstances, can thrive. Our 
            vision is of a nation where access to education, healthcare, and economic opportunities is universal, where 
@@ -48,12 +50,13 @@ export const Ourmission = () => {
 
         </p>
         </div>
+        </div> 
         <div>
         <h1 className="lg:text-[23px] text-[30px] font-bold mt-11 my pr-11">Our Values</h1>
         <div className="right grid md:grid-cols-3 gap-4 mt-5">
           {/* Top Row Icons */}
           <div className="flex mb-4">
-            <div className="ic mr-2"><GiRoyalLove className="text-[50px] text-yellow-500" /></div>
+            <div className="ic mr-2"><GiRoyalLove className="text-[30px] text-yellow-500" /></div>
             <div className="co">
               <h4 className="font-bold text-[28px]">Compassion:</h4>
               <p className="text-[17px]">We are deeply committed to supporting the most vulnerable members of our 
@@ -62,7 +65,7 @@ export const Ourmission = () => {
             </div>
           </div>
           <div className="flex mb-4">
-            <div className="ic mr-2"><BsTransparency className="text-[50px] text-red-500" /></div>
+            <div className="ic mr-2"><BsTransparency className="text-[30px] text-red-500" /></div>
             <div className="co">
               <h4 className="font-bold text-[28px]">Transparency:</h4>
               <p className="text-[17px]">Honesty and accountability are the cornerstones of our organization. We ensure 
@@ -70,7 +73,7 @@ export const Ourmission = () => {
             </div>
           </div>
           <div className="flex mb-4">
-            <div className="ic mr-2"><PiHandFistFill className="text-[50px]" /></div>
+            <div className="ic mr-2"><PiHandFistFill className="text-[30px]" /></div>
             <div className="co">
               <h4 className="font-bold text-[28px]">Empowerment:</h4>
               <p className="text-[17px]">We believe in empowering individuals and communities with the knowledge, 
@@ -79,7 +82,7 @@ export const Ourmission = () => {
             </div>
           </div>
           <div className="flex mb-4">
-            <div className="ic mr-2"><AiOutlineFileProtect className="text-[50px] text-blue-400" /></div>
+            <div className="ic mr-2"><AiOutlineFileProtect className="text-[30px] text-blue-400" /></div>
             <div className="co">
               <h4 className="font-bold text-[28px]">Sustainability:</h4>
               <p className="text-[17px]">Our programs are designed to deliver long-term benefits, ensuring that the 
@@ -88,7 +91,7 @@ export const Ourmission = () => {
             </div>
           </div>
           <div className="flex mb-4">
-            <div className="ic mr-2"><MdAllInclusive className="text-[50px] text-green-500" /></div>
+            <div className="ic mr-2"><MdAllInclusive className="text-[30px] text-green-500" /></div>
             <div className="co">
               <h4 className="font-bold text-[28px]">Inclusivity:</h4>
               <p className="text-[17px]">We celebrate diversity and strive to create opportunities for all, regardless 
@@ -98,7 +101,7 @@ export const Ourmission = () => {
           </div>
           {/* Bottom Row Icons */}
           <div className="flex mb-4">
-            <div className="ic mr-2"><FaHandsHelping className="text-[50px] text-orange-500" /></div>
+            <div className="ic mr-2"><FaHandsHelping className="text-[30px] text-orange-500" /></div>
             <div className="co">
               <h4 className="font-bold text-[28px]">Collaboration:</h4>
               <p className="text-[17px]">We recognize the power of working together. By partnering with communities, 

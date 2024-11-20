@@ -48,6 +48,7 @@ export const Navbar = () => {
                 to="/whatwedo" 
                 className="block px-4 py-2 hover:bg-green-500"
               >
+
                 What We Do
               </Link>
               <Link 
@@ -139,6 +140,7 @@ export const Navbar = () => {
       )}
       
     </div>
+     
   );
 };
 
