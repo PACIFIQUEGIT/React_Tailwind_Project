@@ -133,6 +133,10 @@ export const Footer = () => {
             </div>
           </div>
 
+
+
+
+
           {/* Footer Column 3: Newsletter Signup */}
           <div>
             <h3 className="text-xl font-bold mb-4">Subscribe</h3>
@@ -154,6 +158,9 @@ export const Footer = () => {
               </button>
             </form>
           </div>
+
+
+          
         </div>
 
         {/* Footer Bottom Section (Copyright) */}

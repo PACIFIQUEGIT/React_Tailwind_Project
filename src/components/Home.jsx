@@ -136,10 +136,17 @@ export const Home = () => {
           <h1 className="bg-white w-7 h-1"></h1>
           <h1 className="text-white font-bold text-[30px]">Our Core Value.</h1>
           <h1 className="text-white font-bold text-[30px]">Our Foundation.</h1>
+
           <p className="text-white">
-            Charity law within Africa varies among <br />
-            <u>Countries</u> but the fundamental principles are the same. <br />
-            <b>Most organizations</b> that are charities.
+            Charity is at the heart of everything we do. While charity laws may
+            differ across African countries, the core principles of compassion,
+            generosity, and community support remain universal.
+            <br />
+            <br />
+            We are committed to creating meaningful change by fostering unity,
+            empowering those in need, and building a brighter future together.
+            Our foundation is built on trust, integrity, and the belief that
+            everyone deserves a chance to thrive.
           </p>
           <button className="bg-white text-black px-4 py-2 mt-4 flex items-center">
             <b onClick={About}>LEARN MORE</b>
@@ -202,6 +209,103 @@ export const Home = () => {
           </button>
         </div>
       </div>
+
+      <div className="mt-10 mb-10 flex flex-col items-center px-4 md:px-0">
+        <h1 className="text-3xl font-bold mb-5 text-center text-gray-800">
+          Recent Causes
+        </h1>
+        <p className="text-center text-gray-600 md:w-1/2">
+          Discover the latest initiatives we are passionately working on to make
+          a positive impact in our communities. From providing essential
+          resources to those in need to supporting educational programs and
+          health services, your contributions help us drive change and uplift
+          lives. Join us in our mission to create a brighter future for
+          everyone. Every effort counts, and together, we can make a difference.
+        </p>
+      </div>
+
+      {/* <div className="flex ml-16 mr-16 mb-10">
+        <div className="p-10">
+          <img src="https://media.istockphoto.com/id/490400030/photo/climate-change-symbol-handful-of-water-scarsity-for-africa-symbol.jpg?s=612x612&w=0&k=20&c=aOPdXKpQz9it0VIWvM_RCegJVg8ZCEBN6lKkwyz5FEY="></img>
+          <h1>CLEAN WATER </h1>
+          <p>
+            Access to clean water is a fundamental human right, yet many
+            children around the world still suffer from water scarcity. Our
+            mission is to provide safe and clean drinking water to children in
+            underserved communities.
+          </p>
+        </div>
+        <div className="p-10">
+          <img src="https://media.istockphoto.com/id/647452298/photo/malindi-kenya-children-from-small-local-village-attending-open-air-primary-school.jpg?s=612x612&w=0&k=20&c=wsVAx6Iy8cSrbKH8wPf9G4qV4VvFrG7rGMWsa4Tw4QU="></img>
+          <h1>EDUCATION FOR CHILDREN </h1>
+          <p>
+            Education is the key to breaking the cycle of poverty and unlocking
+            a brighter future. We are dedicated to providing quality education
+            to children in need, giving them the tools and opportunities to
+            succeed.
+          </p>
+        </div>
+
+        <div className="p-10">
+          <img src="https://media.istockphoto.com/id/1185362250/photo/african-child-in-a-village-near-kalahari-desert.jpg?s=612x612&w=0&k=20&c=WfrHnH4Vrl9ItcrRzHMPygqTsXPkS4noHl68ubV-dF8="></img>
+          <h1>CHILDREN  WITH HUNGER</h1>
+          <p>
+            most of countries in africa are suffering from hunger and malnutrion and are not getting enough food to eat.
+            your help could help them to get foods and seves their lives.
+          </p>
+        </div>
+      </div> */}
+
+      <div className="flex flex-wrap justify-center gap-10 ml-16 mr-16 mb-10">
+        <div className="p-5 bg-white rounded-lg shadow-lg w-96 md:w-[28rem]">
+          <img
+            src="https://media.istockphoto.com/id/490400030/photo/climate-change-symbol-handful-of-water-scarsity-for-africa-symbol.jpg?s=612x612&w=0&k=20&c=aOPdXKpQz9it0VIWvM_RCegJVg8ZCEBN6lKkwyz5FEY="
+            alt="Clean Water"
+            className="w-full h-64 object-cover rounded-lg mb-5"
+          />
+          <h1 className="text-xl font-bold mb-3 text-gray-800">CLEAN WATER</h1>
+          <p className="text-gray-600">
+            Access to clean water is a fundamental human right, yet many
+            children around the world still suffer from water scarcity. Our
+            mission is to provide safe and clean drinking water to children in
+            underserved communities.
+          </p>
+        </div>
+
+        <div className="p-5 bg-white rounded-lg shadow-lg w-96 md:w-[28rem]">
+          <img
+            src="https://media.istockphoto.com/id/647452298/photo/malindi-kenya-children-from-small-local-village-attending-open-air-primary-school.jpg?s=612x612&w=0&k=20&c=wsVAx6Iy8cSrbKH8wPf9G4qV4VvFrG7rGMWsa4Tw4QU="
+            alt="Education for Children"
+            className="w-full h-64 object-cover rounded-lg mb-5"
+          />
+          <h1 className="text-xl font-bold mb-3 text-gray-800">
+            EDUCATION FOR CHILDREN
+          </h1>
+          <p className="text-gray-600">
+            Education is the key to breaking the cycle of poverty and unlocking
+            a brighter future. We are dedicated to providing quality education
+            to children in need, giving them the tools and opportunities to
+            succeed.
+          </p>
+        </div>
+
+        <div className="p-5 bg-white rounded-lg shadow-lg w-96 md:w-[28rem]">
+          <img
+            src="https://media.istockphoto.com/id/1185362250/photo/african-child-in-a-village-near-kalahari-desert.jpg?s=612x612&w=0&k=20&c=WfrHnH4Vrl9ItcrRzHMPygqTsXPkS4noHl68ubV-dF8="
+            alt="Children with Hunger"
+            className="w-full h-64 object-cover rounded-lg mb-5"
+          />
+          <h1 className="text-xl font-bold mb-3 text-gray-800">
+            CHILDREN WITH HUNGER
+          </h1>
+          <p className="text-gray-600">
+            Most countries in Africa are suffering from hunger and malnutrition,
+            with many not getting enough food to eat. Your help could provide
+            food and save lives.
+          </p>
+        </div>
+      </div>
+
       <div>
         <div className="relative">
           <div className="absolute border border-yellow-500 flex lg:left-12 lg:right-12 justify-center lg:top-12 lg:bottom-12">
