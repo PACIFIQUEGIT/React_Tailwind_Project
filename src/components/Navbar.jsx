@@ -65,6 +65,12 @@ export const Navbar = () => {
             </div>
           </div>
           <Link to="/contact" className="hover:text-yellow-500 transition-colors py-3">Contact Us</Link>
+          <Link
+            to="/login"
+            className="hover:text-yellow-500 transition-colors py-3"
+          >
+           Login
+          </Link>
           <Link to="/donate" className="hover:text-yellow-500 transition-colors bg-green-500 text-white px-5 py-3 rounded-lg">Donate</Link>
         </div>
 
@@ -122,6 +128,12 @@ export const Navbar = () => {
             </div>
           </div>
           <Link onClick={toggleMobileMenu} to="/contact" className="hover:text-yellow-500 transition-colors py-3">Contact Us</Link>
+          <Link onClick={toggleMobileMenu}
+            to="/login"
+            className="hover:text-yellow-500 transition-colors py-3"
+          >
+           Login
+          </Link>
           <Link onClick={toggleMobileMenu} to="/donate" className="hover:text-yellow-500 transition-colors bg-green-500 text-white px-5 py-3 rounded-lg">Donate</Link>
         </div>
       )}
@@ -129,3 +141,7 @@ export const Navbar = () => {
     </div>
   );
 };
+
+
+
+
