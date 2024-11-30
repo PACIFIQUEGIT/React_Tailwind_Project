@@ -1,76 +1,94 @@
-import React, { useState } from 'react';
-import { Link, Outlet } from 'react-router-dom';
+
+
+import React from "react";
+import { Outlet } from "react-router-dom";
 import { FaCcVisa, FaCcMastercard, FaCcPaypal } from "react-icons/fa";
-import { IoIosArrowDown } from "react-icons/io";
 
 export const Payment = () => {
-  // State to handle dropdown visibility
-  const [isOpen, setIsOpen] = useState(false);
-
-  // Toggle dropdown visibility
-  const toggleDropdown = () => {
-    setIsOpen(!isOpen);
-  };
-
   return (
-    <>
-      <div className="bg-gray-900 text-white p-4 shadow-md">
-        <div className="flex items-center justify-between max-w-6xl mx-auto">
-          <div className="text-2xl font-bold">
-            <span className="text-yellow-500">Charity</span>
-          </div>
-          <div className="flex space-x-6">
-            <Link className="hover:text-yellow-500 transition-colors py-3">Home</Link>
-            <Link className="hover:text-yellow-500 transition-colors py-3">About</Link>
-            <Link className="hover:text-yellow-500 transition-colors py-3">Contact</Link>
-            <Link className="hover:text-yellow-500 transition-colors bg-green-500 text-white px-5 py-3 rounded-lg">Donate</Link>
-          </div>
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-gray-100 flex items-center justify-center px-4 sm:px-6 md:px-8">
+      {/* Card Container */}
+      <div className="w-full max-w-md sm:max-w-lg md:max-w-2xl lg:max-w-4xl bg-white shadow-lg rounded-3xl overflow-hidden mt-32 sm:mt-32 mb-10">
+        {/* Header Section */}
+        <div className="bg-green-500 text-white p-6 sm:p-8 text-center">
+          <h1 className="text-2xl sm:text-3xl font-bold mb-2">
+            Secure Payment
+          </h1>
+          <p className="text-sm sm:text-base opacity-90">
+            Complete your transaction safely and securely.
+          </p>
         </div>
-      </div>
 
-      <div className="flex justify-center bg-gray-300 p-6">
-        <div className="w-full max-w-3xl text-center">
-          {/* Custom Dropdown for Payment Method */}
-          <h1 className='font-bold text-[30px] mb-4'>Payment Details</h1>
-          <div className='shadow-lg bg-white p-5 mb-5'>
-          <div className="space-y-3 mb-5">
-            <div className="relative">
-              <button 
-                onClick={toggleDropdown} 
-                className="py-2 rounded-lg  focus:outline-none">
-                <div className='flex'>Select Payment Method <IoIosArrowDown className='mt-2' /></div>
-              </button>
-
-              {/* Dropdown menu */}
-              {isOpen && (
-                <div className="absolute top-0 left-[64%] bg-white shadow-lg rounded-lg">
-                  <div className="py-2">
-                    <Link onClick={toggleDropdown}  to="card" className="block py-2 text-blue-500 hover:bg-gray-200">Pay with Card</Link>
-                    <Link onClick={toggleDropdown}  to="paypal" className="block py-2 text-blue-500 hover:bg-gray-200">Pay with PayPal</Link>
-                  </div>
-                </div>
-              )}
+        {/* Payment Content */}
+        <div className="p-6 sm:p-8 space-y-6">
+          {/* Payment Options */}
+          <div className="text-center">
+            <div className="flex justify-center space-x-4 sm:space-x-8">
+              <div className="group flex flex-col items-center cursor-pointer">
+                <FaCcVisa className="text-5xl sm:text-6xl text-blue-600 group-hover:scale-110 transition-transform" />
+                <p className="text-sm text-gray-600 mt-2">Visa</p>
+              </div>
+              <div className="group flex flex-col items-center cursor-pointer">
+                <FaCcMastercard className="text-5xl sm:text-6xl text-red-600 group-hover:scale-110 transition-transform" />
+                <p className="text-sm text-gray-600 mt-2">MasterCard</p>
+              </div>
+              <div className="group flex flex-col items-center cursor-pointer">
+                <FaCcPaypal className="text-5xl sm:text-6xl text-blue-500 group-hover:scale-110 transition-transform" />
+                <p className="text-sm text-gray-600 mt-2">PayPal</p>
+              </div>
             </div>
           </div>
 
-          {/* Payment Card Section */}
-          <div className="h-[300px] w-full max-w-md mx-auto p-4 mb-4">
-            <Outlet />
-          </div>
-          </div>
-          {/* Payment Icons */}
-          <div className="flex justify-center space-x-5 mb-4">
-            <FaCcVisa className="text-[50px] text-blue-600" />
-            <FaCcMastercard className="text-[50px] text-blue-700" />
-            <FaCcPaypal className="text-[50px] text-blue-500" />
-          </div>
-
-          {/* Payment Assurance Text */}
-          <div className="flex justify-center mb-4">
-            <p>Your payment is safe, secure, and fast with us.</p>
+          {/* Payment Form */}
+          <div className="bg-gray-100 rounded-lg shadow-sm p-4 sm:p-6">
+            <h3 className="text-base sm:text-lg font-semibold text-gray-800 mb-4">
+              Enter Payment Information
+            </h3>
+            <form>
+              <div className="space-y-4">
+                <input
+                  type="text"
+                  placeholder="Card Number"
+                  className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                />
+                <input
+                  type="text"
+                  placeholder="Card Holder Name"
+                  className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                />
+                <div className="flex space-x-4">
+                  <input
+                    type="text"
+                    placeholder="MM/YY"
+                    className="w-1/2 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                  />
+                  <input
+                    type="text"
+                    placeholder="CVV"
+                    className="w-1/2 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                  />
+                </div>
+                <button
+                  type="submit"
+                  className="w-full bg-green-500 text-white p-3 rounded-lg font-semibold hover:bg-green-600 focus:ring-2 focus:ring-green-400 focus:outline-none"
+                >
+                  Pay Now
+                </button>
+              </div>
+            </form>
           </div>
         </div>
+
+        {/* Footer Section */}
+        <div className="bg-gray-50 p-4 sm:p-6 text-center border-t">
+          <p className="text-sm text-gray-500">
+            Your payment is protected by industry-leading encryption. <br />
+            <span className="font-semibold text-gray-700">
+              Trusted by thousands of users worldwide.
+            </span>
+          </p>
+        </div>
       </div>
-    </>
+    </div>
   );
 };
