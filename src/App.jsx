@@ -4,7 +4,7 @@ import { Navbar } from './components/Navbar';
 import { Home } from './components/Home'; // Make sure to create these pages
 import { About } from './components/About';
 import { Contact } from './components/Contact';
-import { Donate } from './components/Donate';
+// import { Donate } from './components/Donate';
 import { Footer } from './components/Footer';
 import { Payment } from './components/Payment';
 import { Card } from './components/Card';
@@ -18,6 +18,7 @@ import { Ourmission } from './components/Ourmission';
 import Login from './components/Login/Login';
 import Signup from './components/Signup/Signup';
 import { Paypal } from './components/Paypal';
+import Donate from './components/Donate';
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/donate" element={<Donate />} />
+        {/* <Route path="/donate" element={<Donate />} /> */}
         {/* Corrected the path for the Card route */}
         <Route path="/payment" element={<Payment />}>
           <Route path="card" element={<Card />} />

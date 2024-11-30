@@ -223,9 +223,10 @@ export const Home = () => {
           everyone. Every effort counts, and together, we can make a difference.
         </p>
       </div>
+    
 
-      <div className="flex flex-wrap justify-center gap-10 ml-16 mr-16 mb-10">
-        <div className="p-5 bg-white rounded-lg shadow-lg w-96 md:w-[30%]">
+      <div className="flex flex-wrap justify-center gap-10 mx-4 md:mx-16 mb-10">
+        <div className="p-5 bg-white rounded-lg shadow-lg w-full sm:w-80 md:w-[30%]">
           <img
             src="https://media.istockphoto.com/id/490400030/photo/climate-change-symbol-handful-of-water-scarsity-for-africa-symbol.jpg?s=612x612&w=0&k=20&c=aOPdXKpQz9it0VIWvM_RCegJVg8ZCEBN6lKkwyz5FEY="
             alt="Clean Water"
@@ -240,7 +241,7 @@ export const Home = () => {
           </p>
         </div>
 
-        <div className="p-5 bg-white rounded-lg shadow-lg w-96 md:w-[30%]">
+        <div className="p-5 bg-white rounded-lg shadow-lg w-full sm:w-80 md:w-[30%]">
           <img
             src="https://media.istockphoto.com/id/647452298/photo/malindi-kenya-children-from-small-local-village-attending-open-air-primary-school.jpg?s=612x612&w=0&k=20&c=wsVAx6Iy8cSrbKH8wPf9G4qV4VvFrG7rGMWsa4Tw4QU="
             alt="Education for Children"
@@ -257,7 +258,7 @@ export const Home = () => {
           </p>
         </div>
 
-        <div className="p-5 bg-white rounded-lg shadow-lg w-96 md:w-[30%]">
+        <div className="p-5 bg-white rounded-lg shadow-lg w-full sm:w-80 md:w-[30%]">
           <img
             src="https://media.istockphoto.com/id/1185362250/photo/african-child-in-a-village-near-kalahari-desert.jpg?s=612x612&w=0&k=20&c=WfrHnH4Vrl9ItcrRzHMPygqTsXPkS4noHl68ubV-dF8="
             alt="Children with Hunger"
