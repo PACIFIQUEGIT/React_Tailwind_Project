@@ -1,8 +1,32 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { IoMdArrowBack } from "react-icons/io";
 import { Link } from "react-router-dom";
+import API from "../../utils/axios";
+
+
+
 
 const Login = () => {
+const [email, setEmail] = useState('')
+const [password, setPassword] = useState('')
+  const handleSubmit = async (e) =>{
+    e.preventDefault();
+ try {
+  const response = await API.post('/auth/login', {
+    email, password
+  })
+  console.log(response)
+  if(response.status = 200){
+    const token = response.data.token
+    localStorage.setItem('token', token)
+    window.location.href = '/'
+  }
+ } catch (error) {
+  console.log(error)
+ }   
+
+
+  }
   return (<>
     <div className="bg-gray-900 text-white p-4 shadow-md">
         <div className="flex items-center justify-between max-w-6xl mx-auto">
@@ -41,7 +65,7 @@ const Login = () => {
             </Link>
 
             <h1 className="text-3xl font-bold mb-6">Sign in</h1>
-            <form>
+            <form onSubmit={handleSubmit}>
               <div className="mb-4">
                 <label htmlFor="username" className="block font-medium mb-1">
                   Username
@@ -49,7 +73,9 @@ const Login = () => {
                 <input
                   type="text"
                   id="username"
-                  name="username"
+                  name="email"
+                  value={email}
+                  onChange={(e)=>setEmail(e.target.value)}
                   className="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
                 />
               </div>
@@ -61,6 +87,8 @@ const Login = () => {
                   type="password"
                   id="password"
                   name="password"
+                  value={password}
+                  onChange={(e) =>setPassword(e.target.value)}
                   className="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
                 />
               </div>
@@ -72,8 +100,8 @@ const Login = () => {
               </div>
 
               <button
-                type="button"
-                className="bg-primary text-white w-full py-3 rounded-md hover:bg-primary-dark transition duration-300"
+                type="submit"
+                className="bg-primary w-full py-3 rounded-md hover:bg-primary-dark transition duration-300"
               >
                 Sign in
               </button>
